@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Birthday Surprise</title>
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='css/style.css') }}"
+    >
+
+</head>
+
+<body>
+
+    <div class="birthday-page">
+
+        <h1>
+            🎉 Happy Birthday {{ name }}! 🎉
+        </h1>
+
+        <div class="birthday-card">
+
+            <img
+                class="birthday-photo"
+                src="{{ url_for('static', filename='images/birthday.jpg') }}"
+                alt="Birthday"
+            >
+
+            <h2>
+                Happy Birthday to the most beautiful part of my life
+            </h2>
+
+            <p>
+                may your smile shine brighter than ever, today and always.
+            </p>
+
+        </div>
+
+        <a href="{{ url_for('video') }}">
+            <button type="button">
+                NEXT ➜
+            </button>
+        </a>
+
+    </div>
+
+</body>
+
+</html>

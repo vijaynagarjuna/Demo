@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>A Letter For You</title>
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='css/style.css') }}"
+    >
+
+</head>
+
+<body>
+
+<div class="letter-page">
+
+    <h1>💌 One Last Surprise</h1>
+
+    <p>Click the envelope...</p>
+
+    <div
+        class="envelope"
+        id="envelope"
+        onclick="openEnvelope()"
+    >
+
+        <div class="flap"></div>
+
+        <div class="letter-preview">
+            💌
+        </div>
+
+    </div>
+
+
+    <div
+        class="letter"
+        id="letter"
+    >
+
+        <h2>Dear {{ name }},</h2>
+
+        <p>
+            Happy Birthday! 🎂
+        </p>
+
+        <p>
+            I hope this little surprise made you smile.
+        </p>
+
+        <p>
+           **Hey girl, it’s the boy. ❤️**
+I hope you like the video. Since this is my first try, please forgive me if you find anything amateurish about it. 😅
+**And…..**
+I don’t even know where to start.
+It took some sleepless nights and some of the time I should spend on talking with you , but I really wanted to make this little surprise for you. Hope you like it. 
+### **The Rain 🌧️**
+
+Well, even though we have known each other since **December 12, 2022**, the boy actually met the girl *in you* on **August 15, 2024**.
+It took quite a long time for that boy to truly meet that girl, but he believes in the saying:
+**“The longer the wait, the greater the reward.”**
+And on that day, we spent around **7 hours together**, and every single second was worth it. Somehow, every moment we spent together brought us a little closer.
+And all the credit goes to **the rain**. 🌧️
+It was the rain that actually made us go on that date, and that one little moment triggered the beautiful journey that brought us to where we are today.
+If you observe carefully, **nature always seems to support us whenever we go out on special dates**—the full moon (which, of course, is always right behind me 😌), rain, rainbows, wind, and so many other little things.
+It feels like nature itself cooperates with us.
+Sometimes, I feel like you are a character from a fairy tale—the way you look, the way the world seems to look at you, the way dogs love to play with you, and most importantly, the way you are kind to everyone around you.
+In my words, I would say:
+**“You are a Queen without a crown.” 👑**
+And that is one of the reasons why I call you **THE BEST**.
+The days when I was loving you as a one-sided lover felt like poetry.
+But now…
+**It feels like a rollercoaster ride. 🎢❤️**
+A few days ago, when you told me about the way you used to speak as a child, I was like,
+**“My bangaram is so cute—even her childhood version is adorable.” 🥹❤️**
+That’s why I asked you twice and noted down those precious little words:
+**“Cake kopithara daddy?”**
+**“Daddy, oo kottu daddy.”** 😂❤️
+Those little memories are so precious to me.
+A few days ago, you missed your father and cried with me. It was such a strange feeling for me. I even felt a little jealous of the love and care you share with him.
+But one day, I hope I can at least try to match the care and love your father gives you. ❤️
+I am so proud of my girl.
+She is studying, working hard, and sincerely building her career, just as she promised me.
+I want you to **manifest the career you dream of**, step into your new professional life with confidence, and achieve everything you want.
+And someday, I want to see you helping your father and making him proud.
+**Let’s see the power of our manifestation. ✨**
+Thank you for standing beside me at every point in my life.
+I want you to stay like this for my whole life—to be there through all my ups and downs, just as you have been until now.
+And there is absolutely no exaggeration when I say this:
+**“I am here today because of your mental support and encouragement.”**
+I truly believe that one of the biggest secrets to a man’s success is **peace and positivity**.
+And I found both of them in **you**.
+You brought peace to my chaos, positivity to my difficult days, and a kind of happiness I never knew I needed.
+And for that…
+**Thank you, my girl. ❤️**
+**Always be the same Queen without a crown. 👑❤️**
+
+        </p>
+
+        <p>
+            Keep smiling and keep being amazing. ❤️
+        </p>
+
+        <p class="signature">
+            With lots of love ❤️
+        </p>
+
+    </div>
+
+</div>
+
+
+<script>
+
+function openEnvelope() {
+
+    const envelope =
+        document.getElementById("envelope");
+
+    const letter =
+        document.getElementById("letter");
+
+    envelope.classList.add("open");
+
+    setTimeout(function() {
+
+        letter.classList.add("show");
+
+    }, 1000);
+
+}
+
+</script>
+
+</body>
+
+</html>

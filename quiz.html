@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Our Little Quiz</title>
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='css/style.css') }}"
+    >
+
+</head>
+
+<body>
+
+<div class="puzzle-page">
+
+    <div class="puzzle-box">
+
+        <h1>A Little Quiz</h1>
+
+        <p class="subtitle">
+            Before your surprise...
+        </p>
+
+        <h2>How well do you remember us?</h2>
+
+        <form method="POST">
+
+            <!-- QUESTION 1 -->
+
+            <div class="quiz-question">
+
+                <h3>1. When did we meet for the first time? 📅</h3>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="q1"
+                        value="12-12-2022"
+                        required
+                    >
+                    A. 12-12-2022
+                </label>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="q1"
+                        value="15-08-2024"
+                    >
+                    B. 15-08-2024
+                </label>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="q1"
+                        value="12-08-2022"
+                    >
+                    C. 12-08-2022
+                </label>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="q1"
+                        value="15-12-2022"
+                    >
+                    D. 15-12-2022
+                </label>
+
+            </div>
+
+
+            <!-- QUESTION 2 -->
+
+            <div class="quiz-question">
+
+                <h3>2. What did we eat on our first date? 🍝</h3>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="q2"
+                        value="Alfredo chicken pasta"
+                        required
+                    >
+                    A. Alfredo chicken pasta
+                </label>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="q2"
+                        value="Chicken biryani"
+                    >
+                    B. Chicken biryani
+                </label>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="q2"
+                        value="Margherita pizza"
+                    >
+                    C. Margherita pizza
+                </label>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="q2"
+                        value="Chicken noodles"
+                    >
+                    D. Chicken noodles
+                </label>
+
+            </div>
+
+
+            <!-- QUESTION 3 -->
+
+            <div class="quiz-question">
+
+                <h3>
+                    3. What's my favourite ice cream flavour at GMT, Pondicherry? 🍦
+                </h3>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="q3"
+                        value="Vanilla"
+                        required
+                    >
+                    A. Vanilla
+                </label>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="q3"
+                        value="Chocolate"
+                    >
+                    B. Chocolate
+                </label>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="q3"
+                        value="Hazelnut"
+                    >
+                    C. Hazelnut
+                </label>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="q3"
+                        value="Strawberry"
+                    >
+                    D. Strawberry
+                </label>
+
+            </div>
+
+
+            {% if error %}
+
+                <p class="error">
+                    {{ error }}
+                </p>
+
+            {% endif %}
+
+
+            <button type="submit">
+                Submit Answers ❤️
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+</body>
+
+</html>
